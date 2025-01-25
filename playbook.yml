@@ -15,10 +15,10 @@
             - nginx
             - tree
  
-       - name: checking status ufw firewall
-         command: sudo ufw status
-         register: output
+      - name: checking status ufw firewall
+        command: sudo ufw status
+        register: output
 
-       - name: printing output
-         debug:
+      - name: printing output
+        debug:
             var: output
