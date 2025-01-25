@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checking git '){
             steps{
-             git 'https://github.com/Manikanta937/Ansible_Jenkins.git'
+             git credentialsId: 'ac04981c-9f60-4750-b0d7-466f465e6780', url: 'https://github.com/Manikanta937/Ansible_Jenkins.git'
             }
         }
         stage('executing playbook'){
