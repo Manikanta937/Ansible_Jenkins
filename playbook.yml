@@ -10,15 +10,15 @@
           name: "{{ item }}"
           state: present
           become: yes
-          register: output
         ignore_errors: yes
         loop:
             - nginx
             - tree
+ 
+       - name: checking status ufw firewall
+         command: sudo ufw status
+         register: output
 
-      - name: printing output
-        debug:
+       - name: printing output
+         debug:
             var: output
-
-      - name: checking status ufw firewall
-        command: sudo ufw status
