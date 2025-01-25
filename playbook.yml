@@ -1,6 +1,6 @@
 ---
 
-- name: ansible jenkins simple playbook
+- name: ansible jenkins simple playbook sui
   hosts: all
   become: yes
 
