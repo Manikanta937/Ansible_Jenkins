@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checking git '){
             steps{
-             git 'https://github.com/Manikanta937/Ansible_Jenkins.git'
+             git clone https://github.com/Manikanta937/Ansible_Jenkins.git
             }
         }
         stage('executing playbook'){
