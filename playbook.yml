@@ -11,7 +11,7 @@
           state: present
           become: yes
           register: output
-          ignore_errors: yes
+        ignore_errors: yes
         loop:
             - nginx
             - tree
